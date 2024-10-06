@@ -1,0 +1,140 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Hospital Theme Styles */
+body {
+  background-color: #F0F4F8;
+  /* Fallback color for old browsers */
+  background-image: url('overhead-view-medical-desk-with-succulent-plant-wireless-keyboard-green-surface.jpg');
+  /* Path to your background image */
+  background-size: cover;
+  /* Cover the entire viewport */
+  background-position: center;
+  /* Center the background image */
+  font-family: 'Roboto', sans-serif;
+  background-attachment: fixed;
+  /* Fixed attachment for a nice scrolling effect */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.0);
+  /* White overlay with 50% opacity */
+  backdrop-filter: blur(4px);
+  z-index: -1;
+  /* Make sure the overlay is behind other content */
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  /* Slightly opaque white */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  text-align: center;
+  color: #1b3130;
+  /* Professional blue color */
+  margin-bottom: 30px;
+  /* Increased margin for spacing */
+  font-weight: 500;
+  /* Medium weight for a clean look */
+  font-size: 2.2rem;
+  /* Slightly larger font size */
+  font-family: 'Roboto', sans-serif;
+  /* Using Roboto for a modern look */
+}
+
+#symptoms {
+  border: 1px solid rgba(206, 212, 218, 0.7);
+  border-radius: 5px;
+  background-color: #fdfdfd;
+}
+
+
+
+.btn-primary {
+  background-color: #289e81;
+  /* Orange for the button */
+  border-color: #237a64;
+  /* Border color matching the background */
+  color: white;
+  /* Text color */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #3bbe9e;
+  /* Darker orange on hover */
+  border-color: #3bbe9e;
+  /* Border color on hover */
+}
+
+.btn-primary:active {
+  background-color: #F57C00;
+  /* Keep it the same as the hover color */
+  border-color: #F57C00;
+  /* Border color should match */
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a shadow effect */
+}
+
+
+
+#submit-btn:hover {
+  background-color: #009688;
+  /* Darker teal on hover */
+}
+
+#results {
+  margin-top: 30px;
+}
+
+.result {
+  border: 1px solid rgba(206, 212, 218, 0.5);
+  /* Soft border */
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s;
+  background-color: rgba(178, 232, 178, 0.8);
+  /* Soft green for results */
+}
+
+.result:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+  color: #1b3130;
+  /* Soft teal color */
+  font-size: 0.9rem;
+  /* Font size */
+  text-align: center;
+  /* Center the text */
+  margin-top: 20px;
+  /* Space above the paragraph */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #submit-btn {
+    width: 100%;
+  }
+}
