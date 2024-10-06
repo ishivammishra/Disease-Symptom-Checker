@@ -35,7 +35,7 @@ The Disease Symptom Checker is a web application designed to help users identify
    ```node index.js```
 
 
-The backend will run on ```http://localhost:3000```.
+ The backend will run on ```http://localhost:3000```.
 
 5. Open the ```index.html``` file in your browser to use the frontend. Enter symptoms to check for matching diseases.
 ## How It Works
